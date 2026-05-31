@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瀬戸口心月 生誕祭委員会</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Shippori+Mincho:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:           #fdf6f0;
+    --bg-section:   #faf0e8;
+    --cyan:         #29b8e0;
+    --cyan-light:   #7dd6f0;
+    --cyan-pale:    #d4f0fa;
+    --yellow:       #f5c518;
+    --yellow-pale:  #fde987;
+    --white:        #ffffff;
+    --dark:         #1a3a4a;
+    --mid:          #2e6a88;
+    --muted:        #7ab8cc;
+    --text:         #1a3a4a;
+    --text-light:   #4a7a8a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #fdf6f0;
+    color: var(--dark);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ── STARS BG ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 10% 15%, rgba(41,184,224,0.15) 0%, transparent 100%),
+      radial-gradient(1px 1px at 25% 40%, rgba(41,184,224,0.1) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 40% 10%, rgba(41,184,224,0.18) 0%, transparent 100%),
+      radial-gradient(1px 1px at 55% 30%, rgba(41,184,224,0.12) 0%, transparent 100%),
+      radial-gradient(1px 1px at 70% 20%, rgba(245,197,24,0.15) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 85% 45%, rgba(41,184,224,0.15) 0%, transparent 100%),
+      radial-gradient(1px 1px at 15% 65%, rgba(41,184,224,0.1) 0%, transparent 100%),
+      radial-gradient(1px 1px at 35% 75%, rgba(245,197,24,0.12) 0%, transparent 100%),
+      radial-gradient(1px 1px at 60% 80%, rgba(41,184,224,0.1) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 78% 70%, rgba(41,184,224,0.15) 0%, transparent 100%),
+      radial-gradient(1px 1px at 92% 85%, rgba(245,197,24,0.12) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #fdf6f0 0%, #faf0e8 40%, #fdf6f0 70%, #faf0e6 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-bg-circle-1 {
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(41,184,224,0.18) 0%, transparent 65%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    animation: breathe 6s ease-in-out infinite;
+  }
+  .hero-bg-circle-2 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(245,197,24,0.15) 0%, transparent 70%);
+    top: 30%; right: 10%;
+    animation: breathe 8s ease-in-out infinite 1s;
+  }
+  .hero-bg-circle-3 {
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(41,184,224,0.15) 0%, transparent 70%);
+    bottom: 10%; left: 5%;
+    animation: breathe 7s ease-in-out infinite 2s;
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+    50% { transform: translate(-50%, -50%) scale(1.08); opacity: 1; }
+  }
+
+  .hero-stars {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .star {
+    position: absolute;
+    width: 4px; height: 4px;
+    background: rgba(41,184,224,0.6);
+    border-radius: 50%;
+    animation: twinkle linear infinite;
+  }
+
+  @keyframes twinkle {
+    0%   { transform: translateY(-20px) scale(0); opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 0.6; }
+    100% { transform: translateY(110vh) scale(1); opacity: 0; }
+  }
+
+  .star:nth-child(1)  { left:8%;   animation-duration:7s;  animation-delay:0s;   width:3px;height:3px; }
+  .star:nth-child(2)  { left:18%;  animation-duration:10s; animation-delay:1.2s; }
+  .star:nth-child(3)  { left:30%;  animation-duration:8s;  animation-delay:2.4s; width:5px;height:5px; background:rgba(41,184,224,0.5); }
+  .star:nth-child(4)  { left:44%;  animation-duration:12s; animation-delay:0.8s; width:3px;height:3px; }
+  .star:nth-child(5)  { left:58%;  animation-duration:9s;  animation-delay:3s;   }
+  .star:nth-child(6)  { left:68%;  animation-duration:7.5s;animation-delay:1.8s; width:5px;height:5px; background:rgba(41,184,224,0.6); }
+  .star:nth-child(7)  { left:80%;  animation-duration:11s; animation-delay:4.2s; width:3px;height:3px; }
+  .star:nth-child(8)  { left:90%;  animation-duration:8.5s;animation-delay:2s; }
+  .star:nth-child(9)  { left:50%;  animation-duration:13s; animation-delay:5s;   width:6px;height:6px; background:rgba(41,184,224,0.4); }
+  .star:nth-child(10) { left:24%;  animation-duration:6.5s;animation-delay:0.4s; width:3px;height:3px; }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    border: 1px solid rgba(41,184,224,0.5);
+    color: var(--mid);
+    font-size: 0.72rem;
+    letter-spacing: 0.35em;
+    padding: 0.4rem 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.2s;
+  }
+
+  .hero-title-jp {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.15;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.5s;
+  }
+
+  .hero-title-accent {
+    color: var(--yellow);
+    display: block;
+    font-size: clamp(1.4rem, 3.5vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-top: 0.3rem;
+  }
+
+  .hero-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    letter-spacing: 0.2em;
+    margin-top: 1.2rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.8s;
+  }
+
+  .hero-divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    margin: 2rem auto;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1s;
+  }
+
+  .hero-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: var(--mid);
+    letter-spacing: 0.2em;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.2s;
+  }
+
+  /* CTA JOIN BUTTON */
+  .hero-cta {
+    margin-top: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.5s;
+  }
+
+  .btn-join {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: var(--cyan);
+    color: var(--white);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-join::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.2);
+    transform: translateX(-100%);
+    transition: transform 0.4s;
+  }
+
+  .btn-join:hover::before { transform: translateX(0); }
+  .btn-join:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(41,184,224,0.35);
+  }
+
+  .btn-join-icon { font-size: 1.3rem; }
+
+  .hero-join-note {
+    color: rgba(30,80,100,0.5);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    margin-top: 0.8rem;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(41,184,224,0.6);
+    font-size: 0.65rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.25em;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 2.5s;
+  }
+  .scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(180deg, rgba(64,208,240,0.5), transparent);
+    animation: scrollDown 2s ease-in-out infinite 3.5s;
+  }
+  @keyframes scrollDown {
+    0%, 100% { transform: scaleY(1); transform-origin: top; }
+    50% { transform: scaleY(0.4); transform-origin: top; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    background: rgba(253,246,240,0.95);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(41,184,224,0.25);
+  }
+
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    padding: 0 2rem;
+  }
+
+  .nav-logo {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark);
+    letter-spacing: 0.05em;
+  }
+  .nav-logo span { color: #1a1a1a; }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.78rem;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--cyan); }
+
+  .nav-btn {
+    background: var(--cyan);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.45rem 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+  }
+  .nav-btn:hover { opacity: 0.85; }
+
+  /* ── SECTIONS ── */
+  .section-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+  }
+
+  .section-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.72rem;
+    color: var(--cyan);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+
+  .section-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+  .section-title span { color: var(--cyan); }
+
+  .section-rule {
+    width: 50px; height: 2px;
+    background: linear-gradient(90deg, var(--cyan), transparent);
+    margin-bottom: 3rem;
+  }
+
+  /* ── PROFILE ── */
+  .profile-section {
+    background: linear-gradient(180deg, #fdf6f0 0%, #faf0e8 100%);
+    border-top: 1px solid rgba(41,184,224,0.15);
+  }
+
+  .member-photo-wrap { text-align: center; margin-bottom: 3rem; }
+
+  .member-photo-frame {
+    width: 200px;
+    aspect-ratio: 3/4;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid rgba(41,184,224,0.5);
+    overflow: hidden;
+    background: var(--cyan-pale);
+  }
+  .member-photo-frame img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+    display: block;
+  }
+  .member-photo-deco {
+    position: absolute;
+    width: 200px; aspect-ratio: 3/4;
+    border: 1px solid rgba(41,184,224,0.3);
+    top: 10px; left: calc(50% - 100px + 10px);
+    pointer-events: none;
+  }
+  .member-photo-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    letter-spacing: 0.2em;
+    margin-top: 1rem;
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 3.5rem;
+    align-items: start;
+  }
+
+  .profile-card {
+    background: rgba(255,250,245,0.95);
+    border: 1px solid rgba(41,184,224,0.3);
+    border-radius: 2px;
+    padding: 2.2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: linear-gradient(180deg, var(--cyan), transparent);
+  }
+
+  .profile-name-en {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    letter-spacing: 0.2em;
+    margin-bottom: 0.25rem;
+  }
+  .profile-name-jp {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.15rem;
+  }
+  .profile-reading {
+    font-size: 0.75rem; color: var(--text-light);
+    letter-spacing: 0.15em; margin-bottom: 1.5rem;
+  }
+  .profile-tag {
+    display: inline-block;
+    background: var(--cyan);
+    color: var(--white);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.2rem 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  .profile-items { display: flex; flex-direction: column; gap: 0.85rem; }
+  .profile-item {
+    display: flex; gap: 1rem; align-items: baseline;
+    border-bottom: 1px solid rgba(192,96,208,0.15);
+    padding-bottom: 0.85rem;
+  }
+  .profile-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .profile-item-label {
+    font-size: 0.7rem; color: var(--cyan);
+    letter-spacing: 0.1em; min-width: 72px; font-weight: 600;
+  }
+  .profile-item-value { font-size: 0.88rem; color: var(--dark); line-height: 1.5; }
+
+  .profile-text { font-size: 0.95rem; line-height: 2; color: var(--text); }
+  .profile-highlight {
+    background: linear-gradient(180deg, transparent 60%, rgba(41,184,224,0.25) 60%);
+    font-weight: 500; color: var(--dark);
+  }
+
+  /* ── ACTIVITIES ── */
+  .activities-section {
+    background: linear-gradient(180deg, #faf0e8 0%, #f7ece2 100%);
+  }
+
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .activity-card {
+    background: rgba(255,250,245,0.98);
+    border: 1px solid rgba(41,184,224,0.2);
+    border-radius: 2px;
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    overflow: hidden;
+  }
+  .activity-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--cyan), var(--yellow));
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+  .activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(41,184,224,0.2);
+    border-color: rgba(41,184,224,0.4);
+  }
+  .activity-card:hover::after { transform: scaleX(1); }
+
+  .activity-icon {
+    width: 46px; height: 46px;
+    background: rgba(64,208,240,0.1);
+    border: 1px solid rgba(64,208,240,0.4);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+  .activity-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.05rem; font-weight: 600;
+    color: var(--dark); margin-bottom: 0.8rem;
+  }
+  .activity-desc { font-size: 0.83rem; color: var(--text-light); line-height: 1.85; }
+
+  /* ── ACHIEVEMENTS (活動実績) ── */
+  .achievements-section {
+    background: linear-gradient(180deg, #f7ece2 0%, #faf0e8 100%);
+  }
+
+  .achievement-list { display: flex; flex-direction: column; gap: 1.2rem; }
+
+  .achievement-item {
+    background: rgba(255,250,245,0.95);
+    border: 1px solid rgba(41,184,224,0.15);
+    border-left: 3px solid var(--cyan);
+    padding: 1.4rem 1.8rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    transition: background 0.3s;
+  }
+  .achievement-item:hover { background: #f7ece2; }
+
+  .achievement-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+  .achievement-name {
+    font-size: 0.92rem; color: var(--dark); font-weight: 500;
+  }
+  .achievement-name small {
+    display: block;
+    font-size: 0.75rem; color: var(--text-light);
+    font-weight: 400; margin-top: 0.2rem;
+  }
+  .achievement-badge {
+    font-size: 0.65rem;
+    background: rgba(64,208,240,0.12);
+    border: 1px solid rgba(64,208,240,0.35);
+    color: var(--cyan);
+    padding: 0.2rem 0.6rem;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── GALLERY ── */
+  .gallery-section { background: #fdf6f0; }
+
+  .gallery-tabs {
+    display: flex; gap: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(192,96,208,0.3);
+    flex-wrap: wrap;
+  }
+  .gallery-tab {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.78rem; letter-spacing: 0.08em;
+    color: var(--text-light); cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s, border-color 0.2s;
+    background: none; border-top: none; border-left: none; border-right: none;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+  }
+  .gallery-tab.active {
+    color: var(--cyan);
+    border-bottom-color: var(--cyan);
+    font-weight: 600;
+  }
+  .gallery-panel { display: none; }
+  .gallery-panel.active { display: block; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-item {
+    position: relative; height: 280px;
+    background: var(--cyan-pale);
+    border: 1px solid rgba(91,163,232,0.2);
+    overflow: hidden; cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(41,184,224,0.25);
+  }
+  .gallery-item img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+    display: block;
+    transition: transform 0.4s;
+  }
+  .gallery-item:hover img { transform: scale(1.06); }
+  .gallery-item-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(0deg, rgba(10,22,40,0.85) 0%, transparent);
+    padding: 1.5rem 0.8rem 0.6rem;
+    font-size: 0.72rem; letter-spacing: 0.08em;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .gallery-item:hover .gallery-item-caption { opacity: 1; }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    display: none; position: fixed; inset: 0;
+    background: rgba(5,12,25,0.95);
+    z-index: 9999; align-items: center; justify-content: center;
+    backdrop-filter: blur(10px);
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-img { max-width: 90vw; max-height: 85vh; object-fit: contain; }
+  .lightbox-close {
+    position: absolute; top: 1.5rem; right: 1.5rem;
+    background: none; border: none; color: rgba(255,255,255,0.4);
+    font-size: 1.5rem; cursor: pointer; transition: color 0.2s;
+  }
+  .lightbox-close:hover { color: var(--cyan); }
+
+  /* ── COUNTDOWN ── */
+  .countdown-section {
+    background: linear-gradient(135deg, #1a6a88 0%, #29b8e0 50%, #1a6a88 100%);
+    padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden;
+  }
+  .countdown-section::before {
+    content: '心月';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Shippori Mincho', serif;
+    font-size: 22vw; font-weight: 800;
+    color: rgba(245,197,24,0.03);
+    pointer-events: none; white-space: nowrap;
+  }
+
+  .countdown-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+  .countdown-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem; color: var(--cyan);
+    letter-spacing: 0.35em; text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+  .countdown-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(1.4rem, 3.5vw, 2rem); color: var(--white); margin-bottom: 2.5rem;
+  }
+  .countdown-boxes {
+    display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;
+  }
+  .countdown-box {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 1.2rem 1.6rem; min-width: 90px;
+  }
+  .countdown-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem; font-weight: 300; color: #1a1a1a;
+    line-height: 1; display: block;
+  }
+  .countdown-unit {
+    font-size: 0.65rem; color: #333333;
+    letter-spacing: 0.2em; margin-top: 0.4rem; display: block;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* ── SNS ── */
+  .sns-section {
+    background: #fdf6f0;
+    text-align: center;
+  }
+
+  .sns-card {
+    display: inline-flex; align-items: center; gap: 1.5rem;
+    background: #000; color: white;
+    padding: 1.4rem 2.5rem;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 1rem; border-radius: 2px;
+  }
+  .sns-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+  .sns-x { font-family: 'Montserrat', sans-serif; font-size: 2rem; font-weight: 700; }
+  .sns-info { text-align: left; }
+  .sns-handle { font-size: 1rem; font-weight: 500; }
+  .sns-note { font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 0.2rem; }
+  .sns-sub { margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-light); line-height: 1.8; }
+
+  /* ── JOIN CTA SECTION ── */
+  .join-cta-section {
+    background: linear-gradient(160deg, #faf0e8 0%, #f7ece2 100%);
+    border-top: 1px solid rgba(245,197,24,0.2);
+    border-bottom: 1px solid rgba(245,197,24,0.2);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  .join-cta-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    font-weight: 700; color: var(--dark); margin-bottom: 1rem;
+  }
+  .join-cta-title span { color: var(--cyan); }
+  .join-cta-desc {
+    font-size: 0.9rem; color: var(--text-light);
+    line-height: 1.95; max-width: 550px; margin: 0 auto 2.5rem;
+  }
+  .btn-join-large {
+    display: inline-flex; align-items: center; gap: 1rem;
+    background: var(--cyan); color: var(--white);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1.1rem; font-weight: 700; letter-spacing: 0.1em;
+    padding: 1.2rem 3rem; border: none; border-radius: 2px;
+    cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .btn-join-large:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(41,184,224,0.35);
+  }
+  .join-note {
+    font-size: 0.75rem; color: rgba(30,80,100,0.5);
+    letter-spacing: 0.1em; margin-top: 1rem;
+  }
+
+  /* ── MODAL OVERLAY ── */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(20,60,80,0.75);
+    z-index: 9000; align-items: center; justify-content: center;
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+  }
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: #fdf6f0;
+    border: 1px solid rgba(245,197,24,0.3);
+    max-width: 620px; width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 2px;
+    animation: modalIn 0.4s ease;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .modal-header {
+    background: linear-gradient(135deg, #1a4a60, #29b8e0);
+    padding: 2rem;
+    border-bottom: 1px solid rgba(245,197,24,0.2);
+    text-align: center;
+    position: sticky; top: 0; z-index: 1;
+  }
+  .modal-badge {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65rem; color: var(--cyan);
+    letter-spacing: 0.35em; text-transform: uppercase;
+    margin-bottom: 0.6rem; display: block;
+  }
+  .modal-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.5rem; font-weight: 700; color: var(--white);
+  }
+
+  .modal-close {
+    position: absolute; top: 1rem; right: 1rem;
+    background: none; border: none; color: rgba(255,255,255,0.7);
+    font-size: 1.4rem; cursor: pointer; transition: color 0.2s;
+    line-height: 1;
+  }
+  .modal-close:hover { color: var(--cyan); }
+
+  .modal-body { padding: 2rem; }
+
+  .rules-intro {
+    font-size: 0.88rem; color: var(--text); line-height: 1.9;
+    margin-bottom: 2rem; background: rgba(64,208,240,0.06);
+    border-left: 3px solid var(--cyan); padding: 1rem 1.2rem;
+  }
+
+  .rules-section { margin-bottom: 2rem; }
+  .rules-section-title {
+    font-size: 0.82rem; font-weight: 700; color: var(--cyan);
+    letter-spacing: 0.15em; margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .rules-section-title::after {
+    content: ''; flex: 1; height: 1px;
+    background: rgba(64,208,240,0.2);
+  }
+
+  .rules-list { display: flex; flex-direction: column; gap: 0.75rem; }
+  .rule-item {
+    display: flex; gap: 1rem; align-items: flex-start;
+    font-size: 0.85rem; color: var(--text); line-height: 1.7;
+    padding: 0.8rem 1rem;
+    background: rgba(250,240,232,0.8);
+    border: 1px solid rgba(41,184,224,0.15);
+    border-radius: 2px;
+  }
+  .rule-num {
+    background: rgba(41,184,224,0.15); color: var(--cyan);
+    font-size: 0.65rem; font-weight: 700; font-family: 'Montserrat', sans-serif;
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 0.1rem;
+  }
+
+  .modal-checkbox-area {
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+    background: rgba(41,184,224,0.06);
+    border: 1px solid rgba(41,184,224,0.25);
+    display: flex; align-items: flex-start; gap: 0.8rem;
+    cursor: pointer;
+  }
+  .modal-checkbox-area input[type="checkbox"] {
+    width: 18px; height: 18px;
+    accent-color: var(--cyan);
+    margin-top: 0.1rem; flex-shrink: 0; cursor: pointer;
+  }
+  .modal-checkbox-area label {
+    font-size: 0.85rem; color: var(--text);
+    cursor: pointer; line-height: 1.6;
+  }
+
+  .btn-line {
+    display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+    width: 100%; padding: 1.1rem;
+    background: #06C755; color: white;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem; font-weight: 700; letter-spacing: 0.1em;
+    border: none; border-radius: 4px; cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    margin-top: 0.5rem;
+  }
+  .btn-line:disabled {
+    background: rgba(6,199,85,0.25); cursor: not-allowed;
+    color: rgba(255,255,255,0.4);
+  }
+  .btn-line:not(:disabled):hover { opacity: 0.88; transform: translateY(-2px); }
+
+  .line-icon {
+    width: 24px; height: 24px;
+    background: white; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .line-icon svg { width: 16px; height: 16px; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1a4a60;
+    border-top: 1px solid rgba(245,197,24,0.1);
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .footer-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem; color: var(--cyan-light); margin-bottom: 0.4rem;
+  }
+  .footer-copy { font-size: 0.72rem; letter-spacing: 0.1em; }
+  .footer-disclaimer {
+    font-size: 0.68rem; margin-top: 1rem; line-height: 1.7;
+    max-width: 500px; margin-left: auto; margin-right: auto;
+  }
+
+  /* ── REVEAL ── */
+  .reveal {
+    opacity: 0; transform: translateY(22px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .profile-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .achievement-item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+    .countdown-boxes { gap: 0.5rem; }
+    .countdown-box { min-width: 64px; padding: 0.9rem 0.6rem; }
+    .countdown-num { font-size: 2rem; }
+    .sns-card { width: 100%; max-width: 320px; padding: 1.2rem 1.5rem; gap: 1rem; }
+    .btn-join-large { padding: 1rem 2rem; font-size: 0.95rem; }
+  }
+  @media (max-width: 380px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .countdown-num { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg-circle hero-bg-circle-1"></div>
+  <div class="hero-bg-circle hero-bg-circle-2"></div>
+  <div class="hero-bg-circle hero-bg-circle-3"></div>
+  <div class="hero-stars">
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">Nogizaka46 · 6th Generation</div>
+    <h1 class="hero-title-jp">
+      瀬戸口心月
+      <span class="hero-title-accent">生誕祭委員会</span>
+    </h1>
+    <p class="hero-sub">Setoguchi Mitsuki Birthday Committee</p>
+    <div class="hero-divider"></div>
+    <p class="hero-date">Birthday · July 16, 2005</p>
+    <div class="hero-cta">
+      <button class="btn-join" onclick="openModal()">
+        <span class="btn-join-icon">💛</span>
+        委員会に参加する
+      </button>
+      <p class="hero-join-note">LINEグループへの参加案内をご覧いただけます</p>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">瀬戸口心月<span>生誕祭</span>委員会</div>
+    <ul class="nav-links">
+      <li><a href="#profile">プロフィール</a></li>
+      <li><a href="#activities">活動内容</a></li>
+      <li><a href="#achievements">活動実績</a></li>
+      <li><a href="#gallery">活動記録</a></li>
+      <li><a href="#sns">SNS</a></li>
+      <li><button class="nav-btn" onclick="openModal()">参加する</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PROFILE -->
+<div class="profile-section">
+  <div class="section-wrap">
+    <p class="section-label reveal">Profile</p>
+    <h2 class="section-title reveal" id="profile">瀬戸口<span>心月</span></h2>
+    <div class="section-rule reveal"></div>
+
+    <div class="member-photo-wrap reveal">
+      <div class="member-photo-frame">
+        <img src="profile/mitsuki.jpg" alt="瀬戸口心月">
+      </div>
+      <div class="member-photo-deco"></div>
+      <p class="member-photo-label">Setoguchi Mitsuki · 乃木坂46 6期生</p>
+    </div>
+
+    <div class="profile-grid">
+      <div class="profile-card reveal">
+        <p class="profile-name-en">Setoguchi Mitsuki</p>
+        <h3 class="profile-name-jp">瀬戸口 心月</h3>
+        <p class="profile-reading">せとぐち みつき</p>
+        <span class="profile-tag">乃木坂46 6期生</span>
+        <div class="profile-items">
+          <div class="profile-item">
+            <span class="profile-item-label">生年月日</span>
+            <span class="profile-item-value">2005年7月16日</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">出身地</span>
+            <span class="profile-item-value">鹿児島県</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">グループ</span>
+            <span class="profile-item-value">乃木坂46 6期生</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-item-label">センター</span>
+            <span class="profile-item-value">40thシングル「ビリヤニ」<br>Wセンター（&矢田萌華）</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="profile-text">
+          瀬戸口心月は、<span class="profile-highlight">乃木坂46 6期生</span>として活躍するメンバー。
+          鹿児島県出身の、みずみずしい笑顔と真摯なパフォーマンスで多くのファンを魅了している。<br><br>
+          2025年リリースの<span class="profile-highlight">40thシングル「ビリヤニ」では矢田萌華とWセンターを担当</span>し、
+          グループのフロントを担う存在へと成長。その輝かしい才能と、ファンへの温かい想いは日々多くの人に届いている。<br><br>
+          本委員会は、そんな瀬戸口心月さんの誕生日をより特別なものにするために集まった
+          ファン有志による実行委員会です。心を込めた応援活動を通じて、メンバーへの感謝と
+          祝福の気持ちを届けていきます。<br><br>
+          一緒に心月さんをお祝いしたい方は、ぜひ委員会へご参加ください。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACTIVITIES -->
+<div class="activities-section">
+  <div class="section-wrap">
+    <p class="section-label reveal">Activities</p>
+    <h2 class="section-title reveal" id="activities">活動<span>内容</span></h2>
+    <div class="section-rule reveal"></div>
+    <div class="activity-grid">
+      <div class="activity-card reveal">
+        <div class="activity-icon">🌟</div>
+        <h3 class="activity-title">お誕生日ポスター掲出</h3>
+        <p class="activity-desc">心月さんの誕生日に合わせ「おめでとう」の気持ちを込めた応援ポスターを制作・掲出。デザインにもこだわり、その年ならではの特別なビジュアルでお祝いします。</p>
+      </div>
+      <div class="activity-card reveal">
+        <div class="activity-icon">💐</div>
+        <h3 class="activity-title">握手会・ミーグリへの祝い花</h3>
+        <p class="activity-desc">握手会やオンライン握手会（ミート＆グリート）の開催時に、会場へ祝い花やポスターを送付。心を込めた花と応援メッセージをお届けします。</p>
+      </div>
+      <div class="activity-card reveal">
+        <div class="activity-icon">📣</div>
+        <h3 class="activity-title">SNSでの誕生日メッセージ</h3>
+        <p class="activity-desc">誕生日当日には公式Xアカウントでお祝いメッセージを投稿。ファンの想いを結集した言葉で心月さんの誕生日をお祝いします。</p>
+      </div>
+      <div class="activity-card reveal">
+        <div class="activity-icon">🎂</div>
+        <h3 class="activity-title">生誕祭イベントの企画</h3>
+        <p class="activity-desc">毎年の誕生日に向けて、ファン同士が気持ちをひとつにできる生誕祭企画を検討・実施。より多くのファンと一緒に心月さんの誕生日を盛り上げます。</p>
+      </div>
+      <div class="activity-card reveal">
+        <div class="activity-icon">🤝</div>
+        <h3 class="activity-title">ファンコミュニティの交流</h3>
+        <p class="activity-desc">心月さんのファン同士が繋がり、応援の輪を広げる場を提供。共に応援する仲間とともに、より大きな愛を届けていきます。</p>
+      </div>
+      <div class="activity-card reveal">
+        <div class="activity-icon">📸</div>
+        <h3 class="activity-title">応援活動の記録・発信</h3>
+        <p class="activity-desc">実施したポスターや祝い花の様子をSNSで随時発信。活動の記録を残しながら、心月さんへの応援をより多くの人に広めていきます。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div class="achievements-section">
+  <div class="section-wrap">
+    <p class="section-label reveal">History</p>
+    <h2 class="section-title reveal" id="achievements">活動<span>実績</span></h2>
+    <div class="section-rule reveal"></div>
+    <div class="achievement-list">
+      <div class="achievement-item reveal">
+        <span class="achievement-date">2025.07.16</span>
+        <div class="achievement-name">
+          瀬戸口心月 20歳 生誕祭ポスター掲出
+          <small>渋谷・原宿エリア 複数箇所</small>
+        </div>
+        <span class="achievement-badge">Birthday</span>
+      </div>
+      <div class="achievement-item reveal">
+        <span class="achievement-date">2025.06</span>
+        <div class="achievement-name">
+          40thシングル「ビリヤニ」リリース記念 祝い花
+          <small>握手会会場にて贈呈</small>
+        </div>
+        <span class="achievement-badge">Single</span>
+      </div>
+      <div class="achievement-item reveal">
+        <span class="achievement-date">2025.05</span>
+        <div class="achievement-name">
+          ミート＆グリート 応援ポスター送付
+          <small>オンライン握手会対応</small>
+        </div>
+        <span class="achievement-badge">Event</span>
+      </div>
+      <div class="achievement-item reveal">
+        <span class="achievement-date">2024.07.16</span>
+        <div class="achievement-name">
+          瀬戸口心月 19歳 生誕祭ポスター掲出
+          <small>東京都内 複数箇所</small>
+        </div>
+        <span class="achievement-badge">Birthday</span>
+      </div>
+      <div class="achievement-item reveal">
+        <span class="achievement-date">2024.04</span>
+        <div class="achievement-name">
+          委員会 公式Xアカウント開設・活動開始
+          <small>@nogi6kiseitan02</small>
+        </div>
+        <span class="achievement-badge">Start</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery-section">
+  <div class="section-wrap">
+    <p class="section-label reveal">Archive</p>
+    <h2 class="section-title reveal" id="gallery">活動<span>記録</span></h2>
+    <div class="section-rule reveal"></div>
+
+    <div class="gallery-tabs reveal">
+      <button class="gallery-tab active" onclick="switchTab(event,'tab-flower')">🌺 祝い花</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-poster')">📜 ポスター</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-photo')">💛 心月の写真</button>
+      <button class="gallery-tab" onclick="switchTab(event,'tab-event')">🎉 イベント記録</button>
+    </div>
+
+    <!-- 祝い花 -->
+    <div class="gallery-panel active" id="tab-flower">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('gallery/flower_01.jpg')">
+          <img src="gallery/flower_01.jpg" alt="祝い花">
+          <div class="gallery-item-caption">生誕祝い花 · 握手会</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/flower_02.jpg')">
+          <img src="gallery/flower_02.jpg" alt="祝い花">
+          <div class="gallery-item-caption">生誕祝い花 · ミーグリ</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/flower_03.jpg')">
+          <img src="gallery/flower_03.jpg" alt="祝い花">
+          <div class="gallery-item-caption">応援花 · 生誕祭</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/flower_04.jpg')">
+          <img src="gallery/flower_04.jpg" alt="祝い花">
+          <div class="gallery-item-caption">応援花 · 握手会会場</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ポスター -->
+    <div class="gallery-panel" id="tab-poster">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('gallery/poster_01.jpg')">
+          <img src="gallery/poster_01.jpg" alt="ポスター">
+          <div class="gallery-item-caption">応援ポスター</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/poster_02.jpg')">
+          <img src="gallery/poster_02.jpg" alt="ポスター">
+          <div class="gallery-item-caption">応援ポスター</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/poster_03.jpg')">
+          <img src="gallery/poster_03.jpg" alt="ポスター">
+          <div class="gallery-item-caption">応援ポスター</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/poster_04.jpg')">
+          <img src="gallery/poster_04.jpg" alt="ポスター">
+          <div class="gallery-item-caption">応援ポスター</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/poster_05.jpg')">
+          <img src="gallery/poster_05.jpg" alt="ポスター">
+          <div class="gallery-item-caption">応援ポスター</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 心月の写真 -->
+    <div class="gallery-panel" id="tab-photo">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('gallery/mitsuki_01.jpg')">
+          <img src="gallery/mitsuki_01.jpg" alt="瀬戸口心月">
+          <div class="gallery-item-caption">瀬戸口心月</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/mitsuki_02.jpg')">
+          <img src="gallery/mitsuki_02.jpg" alt="瀬戸口心月">
+          <div class="gallery-item-caption">瀬戸口心月</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/mitsuki_03.jpg')">
+          <img src="gallery/mitsuki_03.jpg" alt="瀬戸口心月">
+          <div class="gallery-item-caption">瀬戸口心月</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/mitsuki_04.jpg')">
+          <img src="gallery/mitsuki_04.jpg" alt="瀬戸口心月">
+          <div class="gallery-item-caption">瀬戸口心月</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- イベント記録 -->
+    <div class="gallery-panel" id="tab-event">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('gallery/event_01.jpg')">
+          <img src="gallery/event_01.jpg" alt="イベント記録">
+          <div class="gallery-item-caption">生誕祭イベント</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/event_04.jpg')">
+          <img src="gallery/event_04.jpg" alt="イベント記録">
+          <div class="gallery-item-caption">握手会 · 会場</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery/event_03.jpg')">
+          <img src="gallery/event_03.jpg" alt="イベント記録">
+          <div class="gallery-item-caption">Happy Birthday</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="countdown-section" id="countdown">
+  <div class="countdown-inner">
+    <p class="countdown-label">Next Birthday</p>
+    <h2 class="countdown-title">瀬戸口心月さんのお誕生日まで</h2>
+    <div class="countdown-boxes">
+      <div class="countdown-box">
+        <span class="countdown-num" id="cd-days">--</span>
+        <span class="countdown-unit">DAYS</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-num" id="cd-hours">--</span>
+        <span class="countdown-unit">HOURS</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-num" id="cd-mins">--</span>
+        <span class="countdown-unit">MINUTES</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-num" id="cd-secs">--</span>
+        <span class="countdown-unit">SECONDS</span>
+      </div>
+    </div>
+    <p style="color:rgba(255,255,255,0.6); font-size:0.72rem; margin-top:1.5rem; letter-spacing:0.15em; font-family:'Montserrat',sans-serif;">
+      7月16日 · July 16
+    </p>
+  </div>
+</div>
+
+<!-- SNS -->
+<div class="sns-section">
+  <div class="section-wrap" id="sns" style="text-align:center;">
+    <p class="section-label reveal">Follow Us</p>
+    <h2 class="section-title reveal">公式<span>SNS</span></h2>
+    <div class="section-rule reveal" style="margin:0 auto 1rem;"></div>
+    <p class="reveal" style="font-size:0.9rem; color:var(--muted); line-height:1.8; max-width:500px; margin:0 auto;">
+      最新の活動情報・お祝いメッセージは<br>公式Xアカウントでお届けしています。
+    </p>
+    <div class="reveal">
+      <a href="https://x.com/nogi6kiseitan02" target="_blank" class="sns-card">
+        <span class="sns-x">𝕏</span>
+        <div class="sns-info">
+          <div class="sns-handle">@nogi6kiseitan02</div>
+          <div class="sns-note">瀬戸口心月 生誕祭委員会</div>
+        </div>
+      </a>
+      <p class="sns-sub">
+        フォロー・いいね・RTもぜひよろしくお願いします💛<br>
+        #瀬戸口心月 #瀬戸口心月生誕祭 をつけて応援メッセージも募集中です！
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- JOIN CTA -->
+<div class="join-cta-section">
+  <div class="section-label reveal">Join Us</div>
+  <h2 class="join-cta-title reveal">一緒に<span>心月さん</span>を<br>お祝いしませんか？</h2>
+  <p class="join-cta-desc reveal">
+    瀬戸口心月さんの誕生日や活動を一緒にお祝いしたいファンの方を募集しています。
+    LINEグループで情報共有・企画参加をお待ちしています。
+  </p>
+  <div class="reveal">
+    <button class="btn-join-large" onclick="openModal()">
+      <span>💛</span>
+      委員会に参加する
+    </button>
+    <p class="join-note">※ 参加前に規約をご確認ください</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-name">瀬戸口心月 生誕祭委員会</p>
+  <p class="footer-copy">Setoguchi Mitsuki Birthday Committee</p>
+  <p class="footer-disclaimer">
+    本サイトは瀬戸口心月さんのファン有志による非公式の応援委員会サイトです。<br>
+    乃木坂46・株式会社ソニー・ミュージックレーベルズとは一切関係ありません。
+  </p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+<!-- MODAL (規約) -->
+<div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <span class="modal-badge">Committee Rules &amp; Terms</span>
+      <h2 class="modal-title">参加規約</h2>
+    </div>
+    <div class="modal-body">
+      <div class="rules-intro">
+        以下の規約をよくお読みのうえ、同意いただける場合のみ入会手続きへお進みください。
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">📌 第１条（目的）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>瀬戸口心月生誕祭実行委員会（以下、本会）は、乃木坂46所属メンバー6期生瀬戸口心月さんの芸能活動を後押しすることを目的とする。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">📌 第２条（活動）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>生誕祭企画・運営</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">2</span>
+            <span>瀬戸口心月さんの芸能活動に関する啓発・広報</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">3</span>
+            <span>その他、第1条を達成するために必要と判断された内容</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">🚫 第３条（禁止事項）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>乃木坂46メンバー・生誕会員への誹謗中傷（X等のSNSも含む）する行為。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">2</span>
+            <span>本会の運営・進行を妨げる行為、風紀を乱す行為。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">3</span>
+            <span>メンバーへの認知目的での入会行為（生誕祭当日以外で乃木坂メンバーに生誕委員であることを伝える行為）。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">4</span>
+            <span>本会の活動に関わる情報漏洩の行為（退会後も含む）。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">5</span>
+            <span>SNS等で生誕委員であることを公表する行為。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">⚠️ 第４条（脱会及び脱会命令）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num" style="font-size:0.55rem;">条文</span>
+            <span>乃木坂46のファンとして、または生誕委員として相応しくない行動・言動、もしくは本会の運営上好ましくないと判断された場合、委員長・副委員長と協議のもとで委員を強制的に脱会させることができます。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>委員の個人情報漏洩をした場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">2</span>
+            <span>事業および計画の情報漏洩をした場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">3</span>
+            <span>事実とは異なる情報漏洩及び拡散をした場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">4</span>
+            <span>乃木坂46合同会社に不利益な行動及び言動をした場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">5</span>
+            <span>本委員会に不利益な行動及び言動をした場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">6</span>
+            <span>本委員会以外のファン、他の生誕委員会にとって迷惑・不利益な行動及び言動をした場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">7</span>
+            <span>他者・メンバーに対してハラスメント行為が発覚した場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">8</span>
+            <span>過去に迷惑行為・出禁行為が発覚した場合</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">9</span>
+            <span>第３条の禁止事項を２回以上指導が入った場合</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">💰 第５条（会費）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>入会する際に、生誕費として会費をお支払いいただきます。<br>
+              <strong style="color:var(--cyan); display:block; margin-top:0.5rem;">
+                社会人：7,000円　／　大学・専門学生：5,000円　／　高校生以下：3,000円
+              </strong>
+            </span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">2</span>
+            <span>集めた会費は、如何なる理由であっても返金いたしかねます。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">3</span>
+            <span>会費は装飾・フライヤー・メッセージ・祝花等、委員内で決定した項目に使用します。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">4</span>
+            <span>急なお祝いごとがある際は別途で有志を募る可能性があります。※有志は強制ではありません。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">🏷️ 第６条（班）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>活動テーマ毎に班を作成予定です（装飾班・ノベルティ班・祝花班など）。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">2</span>
+            <span>生誕費をお支払いいただき正式グループ加入後に、希望の班をご連絡ください。複数参加可能です。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">🚪 第７条（退会）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num">1</span>
+            <span>本会を退会する場合は、役員に事前にご連絡ください。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">2</span>
+            <span>退会後も本会の活動に関わる情報漏洩を禁止とします。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num">3</span>
+            <span>退会時、会費の返金はできません。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">👥 第８条（管理監督者）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num" style="font-size:0.55rem;">条文</span>
+            <span>6期生生誕祭実行委員会の円滑な設立と健全な運営を目的として、管理生誕および管理監督者を設けます。</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-num" style="font-size:0.55rem;">管理</span>
+            <span>
+              <strong>管理生誕：</strong>佐藤楓生誕祭実行委員会 / 久保史緒里生誕祭実行委員会<br>
+              <strong>管理監督者：</strong>各委員会委員長
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-section">
+        <div class="rules-section-title">✅ 第９条（入会）</div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-num" style="font-size:0.55rem;">条文</span>
+            <span>以上の内容を一読し「運営方針に同意します」と回答をいただいた場合、入会手続きへ進むものとします。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-checkbox-area" onclick="toggleCheckbox()">
+        <input type="checkbox" id="agree-checkbox" onclick="event.stopPropagation(); updateBtn()">
+        <label for="agree-checkbox">上記の規約をすべて読み、内容に同意します</label>
+      </div>
+
+      <button class="btn-line" id="line-btn" disabled onclick="goToLine()">
+        <div class="line-icon">
+          <svg viewBox="0 0 24 24" fill="#06C755" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.365 9.89c.188 0 .31.13.31.31v1.23c0 .18-.122.31-.31.31h-3.73v1.01h3.73c.188 0 .31.13.31.31v1.23c0 .18-.122.31-.31.31h-5.27c-.187 0-.31-.13-.31-.31V9.89c0-.18.123-.31.31-.31h5.27zm-7.73 0c.19 0 .31.13.31.31v4.6c0 .18-.12.31-.31.31h-1.23c-.18 0-.31-.13-.31-.31V9.89c0-.18.13-.31.31-.31h1.23zm-2.88 0c.18 0 .31.13.31.31v4.6c0 .18-.13.31-.31.31H7.52c-.19 0-.31-.13-.31-.31V9.89c0-.18.12-.31.31-.31h1.23zm-3.19 0c.18 0 .31.13.31.31v2.73l2.05-2.9c.07-.1.19-.14.32-.14h1.3c.26 0 .42.29.28.52l-2.06 2.9 2.16 3.08c.14.2 0 .47-.27.47h-1.3c-.13 0-.25-.06-.32-.16L4.12 13.8v1.01c0 .18-.13.31-.31.31H2.58c-.18 0-.31-.13-.31-.31V9.89c0-.18.13-.31.31-.31h1.23zM12 2C6.48 2 2 5.95 2 10.8c0 3.27 2.08 6.15 5.22 7.77-.22.84-.82 3.05-.94 3.52-.14.57.22.56.44.41.17-.1 2.76-1.87 3.88-2.63.46.06.93.1 1.4.1 5.52 0 10-3.95 10-8.8C22 5.95 17.52 2 12 2z"/>
+          </svg>
+        </div>
+        LINEグループに参加する
+      </button>
+      <p style="font-size:0.7rem; color:var(--text-light); text-align:center; margin-top:0.8rem; line-height:1.6;">
+        ※ 規約に同意するとLINEグループへのリンクが有効になります<br>
+        ※ LINEアプリがインストールされている必要があります
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // LINE GROUP URL（実際のグループURLに差し替えてください）
+  const LINE_GROUP_URL = 'https://line.me/R/ti/g/JLSayGHUkL';
+
+  // MODAL
+  function openModal() {
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('agree-checkbox').checked = false;
+    updateBtn();
+  }
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+  function toggleCheckbox() {
+    const cb = document.getElementById('agree-checkbox');
+    cb.checked = !cb.checked;
+    updateBtn();
+  }
+  function updateBtn() {
+    const checked = document.getElementById('agree-checkbox').checked;
+    document.getElementById('line-btn').disabled = !checked;
+  }
+  function goToLine() {
+    window.open(LINE_GROUP_URL, '_blank');
+  }
+
+  // GALLERY TABS
+  function switchTab(e, panelId) {
+    document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.gallery-panel').forEach(p => p.classList.remove('active'));
+    e.target.classList.add('active');
+    document.getElementById(panelId).classList.add('active');
+  }
+
+  // LIGHTBOX
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeLightbox(); closeModal(); }
+  });
+
+  // COUNTDOWN
+  function updateCountdown() {
+    const now = new Date();
+    const year = now.getFullYear();
+    let birthday = new Date(year, 6, 16);
+    if (now >= birthday) birthday = new Date(year + 1, 6, 16);
+    const diff = birthday - now;
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000) / 60000);
+    const secs  = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent  = String(days).padStart(2, '0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cd-mins').textContent  = String(mins).padStart(2, '0');
+    document.getElementById('cd-secs').textContent  = String(secs).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // SCROLL REVEAL
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
